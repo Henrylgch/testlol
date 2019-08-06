@@ -1,0 +1,19 @@
+{
+  "name": "testlol",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henrylgch/testlol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henrylgch/testlol/issues"
+  },
+  "homepage": "https://github.com/Henrylgch/testlol#readme"
+}
