@@ -1,11 +1,12 @@
 const http = require('http')
+const fs = require('fs')
 
-const server = http.createServer(function(request, response) {
-  response.writeHead(200, {"content-type": "text/html"});
-  response.end("<html><h1>Hello world</h1></html>")
+const server = http.createServer((req, res) => {
+  fs.readFile("./public/index.html", (err, data) => {
+    if (err) {console.error(err); return;}
+    res.end(data)
+  }) 
 })
 
 var port = process.env.PORT || 1337;
-server.listen(port)
-
-console.log("server running")
+server.listen(3000)
