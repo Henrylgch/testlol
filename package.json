@@ -1,19 +1,27 @@
 {
   "name": "testlol",
   "version": "1.0.0",
-  "description": "",
+  "description": "Prueba de Azure App Services",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Henrylgch/testlol.git"
   },
-  "author": "",
+  "keywords": [
+    "Appservices",
+    "Azure"
+  ],
+  "author": "Henry L. Garcia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Henrylgch/testlol/issues"
   },
-  "homepage": "https://github.com/Henrylgch/testlol#readme"
+  "homepage": "https://github.com/Henrylgch/testlol#readme",
+  "dependencies": {
+    "node": "^12.8.0"
+  }
 }
