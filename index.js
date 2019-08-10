@@ -1,12 +1,12 @@
-const http = require('http');
-const fs = require('fs');
+const express = require('express')
+const app = express()
+const fs = ('fs')
 
-const server = http.createServer((req, res) => {
-  fs.readFile('./public/index.html', (err, data) => {
-    if (err) {console.error(err); return;}
-    res.end(data)
-  })
+app.get("/", (req, res) => {
+  res.send("Hola mundo")
 })
 
 var port = process.env.PORT || 1337
-server.listen(port);
+app.listen(port, () => {
+  console.log("El servidor esta corriendo");
+})
